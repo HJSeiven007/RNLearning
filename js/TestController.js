@@ -46,10 +46,10 @@ var styles = StyleSheet.create({
 	tabContent: {
     flex: 1,
     alignItems: 'center',
-	backgroundColor:'gray',
+	backgroundColor:'gray'
   },
   tabText: {
 			color: 'red',
-    margin: 50,
-	},
+    margin: 50
+	}
 });

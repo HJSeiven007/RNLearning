@@ -57,26 +57,26 @@ export default class HScrollView extends Component{
 var styles = StyleSheet.create({
 	scrollView: {
 		backgroundColor: 'white',
-   		height: 180,
+   		height: 180
 	 },
     horizontalScrollView: {
-		height: 180,
+		height: 180
 	},
 	viewStyle:{
 		height:180,
-		backgroundColor: 'white',
+		backgroundColor: 'white'
 	},
 	contentContainer: {
 		backgroundColor: 'white',
-		height:180,		
+		height:180
 	},
 	content:{
 		backgroundColor: 'white',
-		height:180,
+		height:180
 	},
    img: {
 		width: Dimensions.get('window').width,
-		height: 180,
+		height: 180
 	}
 	
 });

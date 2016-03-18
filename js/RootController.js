@@ -30,16 +30,16 @@ export default class RootController extends Component{
 		self = this;
 	}
 	
-	menuClicked(info){
-		const { navigator } = self.props;
-		if(navigator) {
+	menuClicked(info) {
+        const { navigator } = self.props;
+        if (navigator) {
             navigator.push({
-				name: 'TestController',
-				component: TestController,
+                name: 'TestController',
+                component: TestController,
             })
-		}	
-	}
-	
+        }
+    }
+
 	render(){
 		
 		const rightButtonConfig = {
@@ -55,14 +55,14 @@ export default class RootController extends Component{
 	    },
 	  };
 	
-	  const titleConfig = {
+	    const titleConfig = {
 				title: '首页',
 		};
-		return (
-			<View style={styles.container}>
+		return(
+            <View style={styles.container}>
 			<NavigationBar  
-			        title={titleConfig}
-			        rightButton={rightButtonConfig} />
+                title={titleConfig}
+                rightButton={rightButtonConfig} />
 			<View style = {styles.seperator}></View>
 			<HScrollView />
 			<HMenu  style = {styles.menu}
