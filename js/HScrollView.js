@@ -9,7 +9,7 @@ import React, {
 	Text,
 	View,
 	ScrollView,
-	Image,
+	Image
 } from 'react-native'; 
 
 var Dimensions = require('Dimensions');

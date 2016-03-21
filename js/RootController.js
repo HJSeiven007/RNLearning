@@ -31,11 +31,13 @@ export default class RootController extends Component{
 	}
 	
 	menuClicked(info) {
+
+        alert(info);
         const { navigator } = self.props;
         if (navigator) {
             navigator.push({
                 name: 'TestController',
-                component: TestController,
+                component: TestController
             })
         }
     }
@@ -49,14 +51,14 @@ export default class RootController extends Component{
 			if(navigator) {
 	            navigator.push({
 					name: 'TestController',
-					component: TestController,
+					component: TestController
 	            })
 			}	
-	    },
+	    }
 	  };
 	
 	    const titleConfig = {
-				title: '首页',
+				title: '首页'
 		};
 		return(
             <View style={styles.container}>
@@ -76,22 +78,22 @@ export default class RootController extends Component{
 var styles = StyleSheet.create({
 	container: {
 	    flex: 1,
-		backgroundColor:'white',
+		backgroundColor:'white'
   },
   tabText: {
 		color: 'red',
-    	margin: 50,
+    	margin: 50
 	},
 	seperator:{
 		height:1,
-		backgroundColor:'lightgray',
+		backgroundColor:'lightgray'
 	},
 	seperator2:{
 		height:49,
-		backgroundColor:'lightgray',
+		backgroundColor:'lightgray'
 	},
 	menu:{
 		marginTop:10,
-		flex:5,
-	},
+		flex:5
+	}
 });

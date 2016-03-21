@@ -31,7 +31,7 @@ export default class NavigationBar extends Component{
 var styles = StyleSheet.create({
 	container:{
 		backgroundColor:'rgba(144, 244, 244, 1)',
-		height:64,
-	},
+		height:64
+	}
 	
 });

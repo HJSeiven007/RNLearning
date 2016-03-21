@@ -31,8 +31,9 @@ export default class Tabbar extends Component{
 				<Navigator
 				initialRoute = {{component:RootController, name:'首页'}}
 				configureScene={(route) => {
-					
-					return Navigator.SceneConfigs.FloatFromRight;
+					var nav = Navigator.SceneConfigs.FloatFromRight;
+					nav.defaultTransitionVelocity = 6;
+					return nav;
 					}}
 				renderScene={(route, navigator) => {
 			            let Component = route.component;

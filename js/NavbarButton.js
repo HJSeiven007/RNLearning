@@ -24,17 +24,17 @@ export default class NavbarButton extends Component {
   static propTypes = {
     style: PropTypes.oneOfType([
       PropTypes.object,
-      PropTypes.array,
+      PropTypes.array
     ]),
     tintColor: PropTypes.string,
     title: PropTypes.string,
-    handler: PropTypes.func,
+    handler: PropTypes.func
   };
 
   static defaultProps = {
     style: {},
     title: '',
     tintColor: '#0076FF',
-    onPress: () => ({}),
+    onPress: () => ({})
   };
 }
